@@ -77,8 +77,8 @@ class UI {
 		container.insertBefore(div, form);
 
 		setTimeout(() => {
-			document.querySelector('.alert').remove()
-		}, 5000);
+			div.remove()
+		}, 4000);
 	}
 }
 
@@ -130,7 +130,7 @@ document.getElementById('students-form').addEventListener('submit', (e) => {
 
 	} else {
 		const student = new Student(name, course, start_date, reg_no);
-		console.log(student);
+		//console.log(student);
 		UI.addStudent(student);
 		Store.addStudent(student);
 		UI.showAlert('Student added successfully', 'success');
