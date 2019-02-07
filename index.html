@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BRYTAHUB Student List</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+</head>
+<body>
+	<div class="container mt-4">
+		<h1 class="display-4 text-center">
+			<i class="fas fa-laptop-code"></i>
+			BRYTA<span class="text-info">HUB</span>
+		</h1>
+		<form id="students-form">
+			<div class="form-group">
+				<label for="name">Student Name</label>
+				<input type="text" id="name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="course">Course</label>
+				<input type="text" id="course" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="start_date">Start Date</label>
+				<input type="date" id="start_date" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="reg_no">Reg. No.</label>
+				<input type="text" id="reg_no" class="form-control">
+			</div>
+			<button type="submit" class="btn btn-info btn-block">
+				Add Student
+			</button>
+		</form>
+		<table class="table table-striped mt-5">
+			<thead>
+				<tr>
+					<th>Student</th>
+					<th>Course</th>
+					<th>Start Date</th>
+					<th>Reg. No.</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="students">
+				
+			</tbody>
+		</table>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>
